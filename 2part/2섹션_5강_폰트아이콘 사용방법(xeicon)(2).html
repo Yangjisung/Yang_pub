@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 아이콘 사용방법(FontAwesome,XEICON)(2)</title>
+    <!-- <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> -->
+    <style>
+        @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+        /**/
+        .box {
+            border: 1px solid #000;
+            width: 50px;
+            height: 50px;
+        }
+        .box:before {
+            content: '\e91c';
+            font-family: xeicon;
+        }
+    </style>
+</head>
+<body>
+  <div class="box"></div>
+  <i class="xi-bars"></i>
+</body>
+</html>
