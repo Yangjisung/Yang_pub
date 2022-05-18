@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 속성으로 자유롭게 자식요소 정렬하기</title>
+    <style>
+        /* 예제1 */
+        .parent {
+            border: 5px solid #000;
+            width: 1320px;
+            height: 500px;
+            /* overflow: hidden; */
+            display: flex;
+            /* flex 를 사용하여 가로배치가능,
+            자식요소에 flex:정수값을 부여하여, 부모요소의 크기값에 맞춘 비율을 배분해 가로정렬 배치할 수 있음.*/
+            justify-content: center; /* flex-start, center, flex-end */
+            align-items: center;/* flex-start, center, flex-end */
+        }
+        .parent div {
+            border: 5px solid red;
+            height: 200px;
+            width: 300px;
+            /* width: calc(1320px / 5);
+            box-sizing: border-box;
+            float: left; */
+        }
+
+        /* 예제2 */
+        /* .card {
+            border: 1px solid #000;
+            width: 500px;
+            height: 400px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            border: 1px solid #000;
+            width: 70%;
+        }
+        .card h1 {
+            margin: 0;
+        } */
+    </style>
+</head>
+<body>
+<!-- 예제1 -->
+ <div class="parent">
+    <div>child</div>
+    <!-- <div>child</div>
+    <div>child</div>
+    <div>child</div>
+    <div>child</div> -->
+ </div>
+
+<!-- 예제2 -->
+<!-- <div class="card">
+    <div class="content">
+        <h1>Card Title</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime numquam a doloremque aspernatur quaerat, debitis corrupti dolores veniam quidem quibusdam reprehenderit adipisci, molestias perspiciatis aut assumenda sit voluptatum perferendis esse.
+        </p>
+        <a href="#none">Read more</a>
+    </div>
+</div> -->
+</body>
+</html>
