@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>탭매뉴  - 프로토타입</title>
+    <link rel='stylesheet' href="/5섹션/css/5섹션 style 4.css">
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <section>
+     <ul class="btn">
+         <li data-art="tab1" class="active">HTML</li>
+         <li data-art="tab2">CSS3</li>
+         <li data-art="tab3">JQ</li>
+         <li data-art="tab4">JAVA S</li>
+         <li data-art="tab5">CSSFRAMEWORKS</Frame></li>
+     </ul>
+     <div class="tabs">
+         <div id="tab1" class="active">tab1</div>
+         <div id="tab2">tab2</div>
+         <div id="tab3">tab3</div>
+         <div id="tab4">tab4</div>
+         <div id="tab5">tab5</div>
+     </div>
+    </section>
+
+    <script>
+    $('.btn li').click(function(){
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+        var tab = $(this).attr('data-art')
+        $('.tabs div').removeClass('active')
+        $('#' + tab).addClass('active')
+    })
+    </script>
+</body>
+</html>

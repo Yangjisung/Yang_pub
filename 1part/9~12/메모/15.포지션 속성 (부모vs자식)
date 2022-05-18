@@ -1,0 +1,14 @@
+포지션 속성 이해하기
+position 속성 : relative & absoulte
+
+relative : 부모요소
+absoulte : 자식요소
+
+포지션 속성을 부여해야
+top bottom left light, z-index 값을 지정할 수 있음.
+
+수평 중앙 위치 하기
+position: absoulte;
+top:50%
+left:50%
+trasform: translate(-50%, -50%)

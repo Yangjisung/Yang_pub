@@ -1,0 +1,52 @@
+
+/* 예제1 */
+/* .parent {
+    --pwidth: 300px;
+    width: calc(var(--pwidth) * 2);
+    height: 100px;
+    margin: auto;
+    background-color: crimson;
+} */
+
+/* 예제2 */
+/* :root {
+  --primary: royalblue;
+  --secondary: black;
+  --positive: yellowgreen;
+  --nagative: crimson;
+}
+
+.btn {
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color:#fff;
+}
+.btn.primary {
+    background-color: var(--primary)
+}
+.btn.secondary {
+    background-color: var(--secondary)
+}
+.btn.positive {
+    background-color: var(--positive)
+}
+.btn.nagative {
+    background-color: var(--nagative)
+} */
+
+/* 예제3 */
+:root {
+    --big: 50px;
+    --medium: 30px;
+    --small: 14px;
+}
+.container h1 {
+    font-size: var(--big);
+}
+.container h3 {
+    font-size: var(--medium);
+}
+.container p {
+    font-size: var(--small);
+}

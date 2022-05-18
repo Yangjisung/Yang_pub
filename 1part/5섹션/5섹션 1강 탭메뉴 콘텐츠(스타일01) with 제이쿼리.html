@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>탭메뉴 콘텐츠 with 제이쿼리</title>
+    <link rel='stylesheet' href="/5섹션/css/5섹션 style 1.css">
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="testimonial-section">
+        <h1><span>CodingWorks</span>Publishing Online Class with Inflearn</h1>
+        <div class="testimonial-pic">
+            <img class="active" src="/5섹션/images/face-01.jpg" data-alt="tab1">
+            <img src="/5섹션/images/face-02.jpg" data-alt="tab2">
+            <img src="/5섹션/images/face-03.jpg" data-alt="tab3">
+            <img src="/5섹션/images/face-04.jpg" data-alt="tab4">
+        </div>
+        <div class="testimonial">
+            <div class="content active" id="tab1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, quidem ipsum? Doloribus assumenda cum dolore eius unde molestias veniam ut id! At nam sit maxime ipsum aliquid quia, facilis ipsa consequuntur delectus numquam a doloribus voluptatem soluta eligendi. Enim, architecto iusto. Quibusdam perspiciatis illum nobis, doloremque quod modi nulla molestiae!
+                </p>
+                <p>Sally, Web Desginer</p>
+            </div>
+            <div class="content" id="tab2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores, adipisci debitis est dolorum a dignissimos quam fugit itaque optio. Dicta veniam autem magni, ea delectus omnis, qui at, velit explicabo harum eligendi ratione amet voluptatum? Praesentium, quisquam, quasi nam nemo nesciunt veritatis dicta eligendi omnis, eaque repudiandae deserunt enim!
+                </p>
+                <p>2</p>
+            </div>
+            <div class="content" id="tab3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore totam, natus hic quia fugiat nesciunt aperiam in repellat sequi doloremque. Quam est dolor quasi illo temporibus distinctio ipsam aspernatur, quis praesentium iusto modi totam delectus a repellendus consectetur. Laboriosam ea atque harum repellat explicabo voluptatibus quidem necessitatibus tempore similique dolores.
+                </p>
+                <p>3</p>
+            </div>
+            <div class="content" id="tab4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus, doloremque necessitatibus qui natus autem magni earum repellat ducimus unde! Quod ad quas amet rerum, voluptatum accusantium eius perspiciatis. Velit.
+                </p>
+                <p>4</p>
+            </div>
+        </div>
+    </div>
+    <script>
+     $('.testimonial-pic img').click(function(){
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+
+        $('.testimonial .content').removeClass('active')
+        $('#' + $(this).attr('data-alt')) .addClass('active')
+     })
+    </script>
+</body>
+</body>
+</html>

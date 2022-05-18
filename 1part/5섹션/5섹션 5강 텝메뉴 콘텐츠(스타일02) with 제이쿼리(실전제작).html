@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>탭매뉴  - 실전제작</title>
+    <link rel='stylesheet' href="/5섹션/css/5섹션 style 5.css">
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <section>
+        <div class="heading">
+            <h1><span>코딩웍스</span>프론트엔드 퍼블리셔 취업을 위한 실전 퍼블리싱 강좌</h1>
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+    <div class="tab-inner">
+     <ul class="btn">
+         <li data-alt="tab1" class="active">HTML</li>
+         <li data-alt="tab2">CSS3</li>
+         <li data-alt="tab3">JQ</li>
+         <li data-alt="tab4">JAVA S</li>
+         <li data-alt="tab5">CSSFRAMEWORKS</Frame></li>
+     </ul>
+     <div class="tabs">
+         <div id="tab1" class="active">
+             <h2>html5</h2>
+             <img src="/5섹션/images/platform-logo-01.png" alt="">
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos inventore labore iste veritatis doloribus reprehenderit voluptates, dolor sint, corrupti laudantium distinctio amet quaerat ea, consequuntur est ducimus saepe alias hic? Eaque, illum tenetur nulla natus laudantium magni quaerat rem laboriosam nisi quidem cumque, quia debitis. Quisquam reiciendis ullam optio odit accusamus voluptas earum eius, ipsam maxime amet excepturi beatae possimus voluptatum libero assumenda minus dolor! Non laudantium labore pariatur facere voluptas quas sed corporis porro eveniet magni similique, libero necessitatibus exercitationem distinctio. Dolor aliquid vel, id odit quam ipsum cumque est maiores sit veniam animi ea totam reiciendis recusandae!
+             </p>
+         </div>
+         <div id="tab2">
+            <h2>CSS3</h2>
+            <img src="/5섹션/images/platform-logo-02.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos inventore labore iste veritatis doloribus reprehenderit voluptates, dolor sint, corrupti laudantium distinctio amet quaerat ea, consequuntur est ducimus saepe alias hic? Eaque, illum tenetur nulla natus laudantium magni quaerat rem laboriosam nisi quidem cumque, quia debitis. Quisquam reiciendis ullam optio odit accusamus voluptas earum eius, ipsam maxime amet excepturi beatae possimus voluptatum libero assumenda minus dolor! Non laudantium labore pariatur facere voluptas quas sed corporis porro eveniet magni similique, libero necessitatibus exercitationem distinctio. Dolor aliquid vel, id odit quam ipsum cumque est maiores sit veniam animi ea totam reiciendis recusandae!
+            </p>
+        </div>
+        <div id="tab3">
+            <h2>JQ</h2>
+            <img src="/5섹션/images/platform-logo-03.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos inventore labore iste veritatis doloribus reprehenderit voluptates, dolor sint, corrupti laudantium distinctio amet quaerat ea, consequuntur est ducimus saepe alias hic? Eaque, illum tenetur nulla natus laudantium magni quaerat rem laboriosam nisi quidem cumque, quia debitis. Quisquam reiciendis ullam optio odit accusamus voluptas earum eius, ipsam maxime amet excepturi beatae possimus voluptatum libero assumenda minus dolor! Non laudantium labore pariatur facere voluptas quas sed corporis porro eveniet magni similique, libero necessitatibus exercitationem distinctio. Dolor aliquid vel, id odit quam ipsum cumque est maiores sit veniam animi ea totam reiciendis recusandae!
+            </p>
+        </div>
+        <div id="tab4" >
+            <h2>JAVA</h2>
+            <img src="/5섹션/images/platform-logo-04.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos inventore labore iste veritatis doloribus reprehenderit voluptates, dolor sint, corrupti laudantium distinctio amet quaerat ea, consequuntur est ducimus saepe alias hic? Eaque, illum tenetur nulla natus laudantium magni quaerat rem laboriosam nisi quidem cumque, quia debitis. Quisquam reiciendis ullam optio odit accusamus voluptas earum eius, ipsam maxime amet excepturi beatae possimus voluptatum libero assumenda minus dolor! Non laudantium labore pariatur facere voluptas quas sed corporis porro eveniet magni similique, libero necessitatibus exercitationem distinctio. Dolor aliquid vel, id odit quam ipsum cumque est maiores sit veniam animi ea totam reiciendis recusandae!
+            </p>
+        </div>
+        <div id="tab5">
+            <h2>CSSFRAMEWORKS</h2>
+            <img src="/5섹션/images/platform-logo-05.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos inventore labore iste veritatis doloribus reprehenderit voluptates, dolor sint, corrupti laudantium distinctio amet quaerat ea, consequuntur est ducimus saepe alias hic? Eaque, illum tenetur nulla natus laudantium magni quaerat rem laboriosam nisi quidem cumque, quia debitis. Quisquam reiciendis ullam optio odit accusamus voluptas earum eius, ipsam maxime amet excepturi beatae possimus voluptatum libero assumenda minus dolor! Non laudantium labore pariatur facere voluptas quas sed corporis porro eveniet magni similique, libero necessitatibus exercitationem distinctio. Dolor aliquid vel, id odit quam ipsum cumque est maiores sit veniam animi ea totam reiciendis recusandae!
+            </p>
+        </div>
+     </div>
+    </div>
+    </section>
+
+    <script>
+    $('.btn li').click(function(){
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+
+        var result = $(this).attr('data-alt')
+        $('.tabs div').removeClass('active')
+        $('#' + result).addClass('active')
+    })
+    </script>
+</body>
+</html>

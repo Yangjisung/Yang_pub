@@ -1,0 +1,21 @@
+<인라인요소>
+한줄에 여러개 배치
+기본 너비값은 컨텐츠의 너비값
+크기값을 가질 수 없음
+상하 마진은 가질 수 있음,
+요소 - span, a, small, big, em, u, s, del, br, q, b, strong, mark, sub, sup, video, audio 
+대부분 텍스트요소
+
+<블록요소>
+한줄에 한개만 배치
+기본너비값은 100%
+크기값을 가질 수 있음
+상하좌우 마진 가질 수 있음
+요소 - div, table, figure, figure, figcaption, caption, header, nav, footer, section, article, aside, p, blockquote, ul, ol, li, td, th, form, hr, h1~h6
+대부분 레이아웃 형성 요소
+
+<인라인블록요소>
+한줄에 여러개 배치
+기본 너비값은 컨텐츠의 너비값
+크기값을 가질 수 있음
+img, input 태그들, button, fontawesome

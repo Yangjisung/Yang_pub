@@ -1,0 +1,2 @@
+box-sizing = 초기 너비값에 추가 된 패딩값과 경계값을 모두 포함.
+ex: box-sizing: border-box

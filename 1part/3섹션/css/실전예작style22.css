@@ -1,0 +1,90 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+font-family:'Noto sans KR', sans-serif;
+line-height: 1.5em;
+margin: 0;
+font-weight: 300;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color:#222;
+}
+
+a {
+text-decoration: none;
+color:#222;
+}
+
+.tab-inner {}
+input[name=tabmenu] {
+    display: none;
+}
+.tabs {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+.items {
+    /* border: 1px solid red; */
+    height: 100vh;
+    width: 300%;
+    transition: 0.5s;
+    position: absolute; /*자식요소에 absoult를 지정하게 되면서 tabs 에는 높이 값을 넣어야함. */
+    top: 0;
+    left: 0;
+}
+.items div {
+    /* border: 1px solid blue; */
+    height: 100vh;
+    float: left;
+    width: 33.333333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items div:nth-child(1) {
+    background-color: teal;
+}
+.items div:nth-child(2) {
+    background-color: dodgerblue;
+}
+.items div:nth-child(3) {
+    background-color: yellowgreen;
+}
+.items div h1{
+    font-size: 80px;
+    font-weight: normal;
+}
+.btn {
+    position: absolute; /*인라인블록 처리되었음*/
+    bottom: 20px;
+    width: 100%;
+    text-align: center; /*또는↓*/
+    /* left: 50%;
+    transform: center; */
+}
+.btn label {
+    display: inline-block;
+    background-color: #fff;
+    height: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+input[id=tab1]:checked ~ .tabs .items {
+    left: 0;
+}
+input[id=tab2]:checked ~ .tabs .items {
+    left: -100%;
+}
+input[id=tab3]:checked ~ .tabs .items {
+    left: -200%;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+    background-color: black;
+}

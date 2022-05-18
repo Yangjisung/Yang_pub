@@ -1,0 +1,31 @@
+
+
+/* <float 와 overflow를 사용해 배치> */
+/* section {
+ border: 5px solid black;
+ width: 600px;
+ overflow: hidden; 
+}
+section article {
+ background-color: gold;
+ width: 200px;
+ height: 100px;
+ float: left;
+ border: 1px solid red;
+ box-sizing: border-box;
+} */
+
+
+
+/* <dipaly: inline block 으로 배치> */
+section {
+    border: 5px solid black;
+    text-align: center;
+}
+section article {
+    background-color: gold;
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}

@@ -1,0 +1,60 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+font-family: 'Noto Sans KR', sans-serif;
+color:#222;
+line-height: 1.5em;
+font-weight: 300;
+margin: 0;
+}
+a {
+color:#222;
+text-decoration: none;
+}
+.container {
+    justify-content: center; /*수평중앙*/
+    align-items: center; /*수직중앙*/
+    height: 100vh;
+    /* container 의 높이 값이 없다면 align-items:center 을 적용하더라도 중앙에 위치 하지 않음.*/
+    display: flex;
+    /* align-items: center; */
+
+}
+.icon {
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    position: relative;
+    /* display: inline-block; */
+}
+.icon span {
+    position: absolute; /* 중요! 엡솔루트는 인라인 블록으로 변경됨. */
+    background-color:  #000;
+    color: #fff;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    top: -80px;
+    left: 50%;
+    transform: translatex(-50%);
+    /* left, transform: translatex 로 인해 부모요소(icon)의 w값이 변해도 변동된 값에 맞춰 위치가 조정됨 */
+    opacity: 0;
+    transition:  0.5s;
+    visibility: hidden; /* 자리값은 유지하되, 존재자체가 사라짐 */
+}
+.icon span:after { /* 가상클래스 befor, after는 시작할때 content요소로 시작해야 작동됨.*/
+    content:'';
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg) translatex(-50%);
+    bottom: -5px;
+    left: 50%;
+}
+.icon:hover span {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible; /* 이외에도 icon.span에 pointer-events: none을 사용해도 됨.*/
+}

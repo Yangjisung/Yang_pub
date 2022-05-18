@@ -1,0 +1,71 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+font-family:'Noto sans KR', sans-serif;
+line-height: 1.5em;
+margin: 0;
+font-weight: 300;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color:#222;
+}
+
+a {
+text-decoration: none;
+color:#222;
+}
+.tab-inner {
+    border: 1px solid red;
+    width: 300px;
+    height: 350px;
+}
+input[name=tabmenu] {
+    display: none;
+}
+.slide {
+    position: relative;
+    width: 300px;
+    height: 300px; /* 높이값을 부여함. */
+    /* overflow: hidden; */
+}
+.slide-inner {
+    border: 1px solid blue;
+    width: 900px;
+    font-size: 0;
+    /*이미지에 약간의 여백이 생기기 때문에 0값을 입력하여 w900값을 정확히 부여할 수 있도록 함.*/
+    position: absolute; 
+    /*자식요소(side-inner)에 absolute 가 입력되어, 부모(slide)의 높이 값을 잃게됨. */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.btn { /* slide에 높이 값이 사라져서*/
+    text-align: center;
+    margin-top: 10px; 
+}
+.btn label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[id=tab1]:checked ~ .slide .slide-inner {
+    left: 0;
+}
+input[id=tab2]:checked ~ .slide .slide-inner {
+    left: -300px;
+}
+input[id=tab3]:checked ~ .slide .slide-inner {
+    left: -600px;
+}
+input[id=tab1]:checked ~.btn label[for=tab1],
+input[id=tab2]:checked ~.btn label[for=tab2],
+input[id=tab3]:checked ~.btn label[for=tab3] {
+    background-color: aqua;
+}

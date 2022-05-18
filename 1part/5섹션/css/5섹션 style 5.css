@@ -1,0 +1,96 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+    margin: 0;
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6em;
+    background-color: #f4f4f4;
+    font-weight: 300;
+    height: 100vh;
+}
+section {
+    width: 800px;
+}
+.tab-inner {
+    margin-top: 30px;
+}
+.btn {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.btn li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    background-color: #eee;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    padding: 5px;
+    border-top: 2px solid transparent;
+}
+.btn li:hover, .btn li.active {
+    background-color: #fff;
+    border-top: 2px solid crimson;
+}
+.btn li:last-child {
+    width: 170px;
+    border-right: none;
+}
+.btn li.active {}
+.tabs {}
+.tabs div {
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+.tabs div.active {
+    display: block;
+}
+/* tab content */
+.tabs div h2 {
+    text-align: center;
+}
+.tabs div img {
+    float: left;
+    margin-right: 10px;
+}
+.tabs div p {
+    overflow: hidden;
+}
+/* Heading */
+.heading {}
+.heading h1{
+    font-size: 30px;
+    text-align: center;
+}
+.heading h1 span{
+    color:crimson;
+}
+.heading input[type=text] {
+ box-sizing: border-box;
+ outline: none;
+ width: 100%;
+ padding: 10px;
+ border: none;
+ border-bottom: 2px solid #ddd;
+ background: #fff url(/5섹션/images/search-icon.png) no-repeat center left 5px;
+ background-size: 23px;
+ padding-left: 35px;
+}
+.heading input[type=text]::placeholder {
+    font-style: italic;
+    transition: 0.3s;
+}
+.heading input[type=text]:focus::placeholder{
+    opacity: 0;
+}

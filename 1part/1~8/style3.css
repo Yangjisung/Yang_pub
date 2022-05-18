@@ -1,0 +1,8 @@
+h1, p { /* 연결 선택자 */
+    color: red; 
+    text-align: center;
+    font-size: 30px;
+}
+p b {/*하위 선택자*/
+    color: blue;
+}

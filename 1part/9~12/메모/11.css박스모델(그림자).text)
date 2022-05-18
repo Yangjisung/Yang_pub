@@ -1,0 +1,8 @@
+box-shadow : inset, offset-x, offset-y, blur, color
+offset-x = 수평 그림자의 offset 값
+offset-y = 수직 그림자의 offset 값
+blur = 그림자 가장자리를 부드럽게 처리하는 정도(기본값0)
+color = 색상지정
+inset = 안쪽그림자
+
+text-shadow 도 동일하나 inset을 쓸 수 없음.

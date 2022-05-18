@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DropDown Navigation</title>
+    <style>
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+        color:#222;
+        line-height: 1.5em;
+    }
+    a {
+        color:#222;
+        text-decoration: none;
+    }
+    .dropdown {
+        width: 200px; /*또는 display:inline block*/
+    } /*with 값을 지정하지 않을 경우 100% 크기로 지정되어있음. */
+    
+    .dropdown-btn {
+        width: 200px; /* inherit 을 쓸경우 부모요소의 with값을 상속받음.*/
+        padding: 10px;
+        font-size: 18;
+        background-color: yellowgreen;
+        color:#fff;
+        border: none; /* html 보더에는 기본음영효과가 있음. none을 통해 깔끔하게 만들어야함.*/
+        outline: none;
+        cursor: pointer;
+    }
+    .dropdown-submenu {
+        display: none;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    }
+    .dropdown-submenu a {
+        display: block;
+        padding: 5px;
+        text-align: center;
+    }
+    .dropdown-submenu a:hover {
+        background-color: #eee;
+    }
+    /* submenu를 보이게 하기 위해선 <dropdown>과<dropdown-submenu>의 관계가 부모,자식요소 관계이여야함.  중요! */
+    .dropdown:hover .dropdown-submenu {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+     <button class="dropdown-btn">Real Esatate Type</button>
+     <div class="dropdown-submenu">
+      <a href="#none">All</a>
+      <a href="#none">One room</a>
+      <a href="#none">1.5 room</a>
+      <a href="#none">Two room</a>
+      <a href="#none">Three roon</a>
+      <a href="#none">Officetel</a>
+      <a href="#none">Apartment</a>
+     </div>
+    </div>
+</body>
+</html>

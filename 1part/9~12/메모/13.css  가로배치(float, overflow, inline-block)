@@ -1,0 +1,16 @@
+1C <수평정렬하기 - float>
+float 속성은 요소가 부모요소 기준으로 왼쪽 또는 오른쪽에 배치할지 지정.
+float 의 디폴트 값은 -> none
+속성:
+- none(defalut) : float 속성 적용 안함.
+- left: 요소가 컨테이너의 왼쪽 배치
+- right: 요소가 컨테이너의 오른쪽 배치
+- margin: auto 요소를 중앙 배치 (* block요소만 적용가능*)
+
+inline-block 과 inlne요소의 중앙 배치는
+text-align:center 를 통해 배치할 수 있음.
+
+2C <clear>
+clear 속성은
+
+float 속성이 적용되면 다음요소가 float 속성을 상속 받는데 이것을 해제시킨다.

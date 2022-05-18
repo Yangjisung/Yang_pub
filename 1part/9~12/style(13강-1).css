@@ -1,0 +1,20 @@
+.parent {
+    border: 5px solid red;
+    width: 600px;
+    /* height: 200px; */
+    overflow: hidden;
+    text-align: center;
+}
+.child {
+    background-color: gold;
+    width: 200px;
+    height: 100px;
+    display: inline-block; /* block */
+    /* float: left; */
+    /* margin: auto; */
+}
+
+/* 'child'에 float 값을 입력하게 되면 부모요소의 높이 값을 잃게 됨.
+
+따라서,
+높이 값을 새롭게 지정 or overflow:hidden 값을 입력해야 함. */

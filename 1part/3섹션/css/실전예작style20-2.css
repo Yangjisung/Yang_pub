@@ -1,0 +1,64 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+font-family:'Noto sans KR', sans-serif;
+line-height: 1.5em;
+margin: 0;
+font-weight: 300;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color:#222;
+}
+
+a {
+text-decoration: none;
+color:#222;
+}
+.tab-inner {
+    border:1px solid red;
+    width: 300px;
+    height: 350px;
+    position: relative;
+}
+input[name=tabmenu] {
+    display: none;
+}
+.content {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /*감춰저 있을뿐, .contents는 존재하고 있기 때문에 visibility를 사용하여 존재를 사라지게함.*/
+    visibility: hidden;
+    transition: 0.5s;
+}
+.btn {
+    position: absolute; 
+    /*btn은 block 요소이므로 width 값은 100%인데 abosoulte 또는 fix를 주면 inlineblock 됨.*/
+    text-align: center;
+    /* absoulte 값을 줬기 때문에 inlineblock으로 변하면서 중앙으로 옮길 공간이 없음. */
+    width: 100%; /*with값을 100% 부여하여, text align center 값이 적용 가능하게 되었음.*/
+    bottom: 10px;
+}
+.btn label {
+    background-color: lightgray;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[id=tab1]:checked ~ .slide1,
+input[id=tab2]:checked ~ .slide2,
+input[id=tab3]:checked ~ .slide3 {
+    opacity: 1;
+    visibility: visible;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+    background-color: crimson;
+}

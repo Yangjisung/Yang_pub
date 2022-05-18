@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 if 조건문 별점주기</title>
+    <link rel='stylesheet' href="/5섹션/css/5섹션 style 3.css">
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="star-rating">
+    <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+    <div class="print">
+        별점주실거죠?
+    </div>
+</div>
+
+<script>
+    $('.stars .fa').click(function(){
+        $(this).addClass('active')
+        $(this).prevAll().addClass('active')
+        $(this).nextAll().removeClass('active')
+
+        var num = $(this).index()
+        // $('.print').text(num)
+        var starRate = num + 1
+        
+        if(starRate == 1) {
+            $('.print').html('<img src="images/star-lv1.png">' + '별로')
+        }
+        else if(starRate == 2) {
+            $('.print').html('<img src="images/star-lv2.png">' + '보통')
+        }
+        else if(starRate == 3) {
+            $('.print').html('<img src="images/star-lv3.png">' + '그냥')
+        }
+        else if(starRate == 4) {
+            $('.print').html('<img src="images/star-lv4.png">' + '맘에들어요')
+        }
+        else {
+            $('.print').html('<img src="images/star-lv5.png">' + '아주좋아요')
+        }
+    })
+</script>
+
+</body>
+</html>
