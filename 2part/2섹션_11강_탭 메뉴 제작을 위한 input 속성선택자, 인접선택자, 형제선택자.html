@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>input 태그의:checked와 확장선택자-이론예제</title>
+  <style>
+  /* Google Web Font */
+   @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+  /* Fontawesome 4.7 */
+   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+   body {
+     font-family: 'Montserrat', sans-serif;
+   }
+
+   .container {}
+
+   input[id=trigger] {
+     display: none;
+   }
+   label[for=trigger] {
+     width: 30px;
+     height: 30px;
+     display: block;
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     cursor: pointer;
+     transition: 0.5s;
+   }
+   label[for=trigger] span {
+     display: block;
+     width: 100%;
+     height: 2px;
+     background-color: #000;
+     position: absolute;
+     top: 0;
+     transition: 0.5s;
+     z-index: 1;
+   }
+   label[for=trigger] span:nth-child(1) {
+     top: 0;
+   }
+   label[for=trigger] span:nth-child(2) {
+     top: 50%;
+   }
+   label[for=trigger] span:nth-child(3) {
+     top: 100%;
+   }
+   input[id=trigger]:checked + label span:nth-child(1) {
+     top: 50%;
+     transform: rotate(45deg);
+   }
+   input[id=trigger]:checked + label span:nth-child(2) {
+     transform: rotate(45deg);
+     opacity: 0;
+   }
+   input[id=trigger]:checked + label span:nth-child(3) {
+     top: 50%;
+     transform: rotate(-45deg);
+   }
+   .sidbar {
+     width: 250px;
+     height: 100vh;
+     background-color: pink;
+     position: fixed;
+     top: 0;
+     left: -250px;
+     transition: 0.5s;
+   }
+   input[id=trigger]:checked ~ .sidbar {
+     left: 0;
+   }
+   input[id=trigger]:checked + label {
+     left: 250px;
+
+   }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <input type="checkbox" id="trigger">
+  <label for="trigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="sidbar"></div>
+</div>
+
+</body>
+</html>

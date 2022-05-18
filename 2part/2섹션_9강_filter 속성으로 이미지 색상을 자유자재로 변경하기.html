@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>filter 속성으로 이미지 색상을 자유자재로 변경하기</title>
+  <style>
+  /* Google Web Font */
+   @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+   body {
+     background-color: #eee;
+   }
+   .image1 {
+     filter: invert(77%) sepia(95%) saturate(3042%) hue-rotate(359deg) brightness(102%) contrast(89%); /*invert(반전) */
+   }
+
+   .image2 {
+    filter: invert(55%) sepia(50%) saturate(658%) hue-rotate(93deg) brightness(92%) contrast(85%);
+   }
+   .image3 {
+     width: 200px;
+     filter: invert(40%) sepia(95%) saturate(5084%) hue-rotate(23deg) brightness(103%) contrast(101%);
+   }
+   .image4 {
+     width: 200px;
+     filter: invert(31%) sepia(26%) saturate(4148%) hue-rotate(259deg) brightness(87%) contrast(79%);
+   }
+  </style>
+
+</head>
+<body>
+  
+ <img class="image1" src="/images/icon-user.png" >
+ <hr>
+ <img class="image2" src="/images/icon-youtube.png">
+ <hr>
+ <img class= "image3" src="/images/icon-mask.svg">
+ <hr>
+ <img class= "image4" src="/images/icon-download.svg">
+
+</body>
+</html>
