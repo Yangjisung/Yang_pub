@@ -1,0 +1,100 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hexagon Image Hover Overay */
+
+
+.frame {
+    display: flex;
+    gap: 40px;
+}
+.hexagon {
+    width: 400px;
+    height: 450px;
+    position: relative;
+    transition: 0.3s;
+}
+.shape {
+    clip-path: polygon(50% 0, 100% 22%, 100% 78%, 50% 100%, 0% 78%, 0 22%); /* 100% 맞춰 줄것*/
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    overflow: hidden; /* gradient 잔상을 없애기 위해 사용*/
+}
+.shape img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: right;
+}
+
+.hexagon .caption {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: #fff;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.hexagon .caption h2 {
+    font-size: 2em;
+}
+.hexagon:nth-child(1) .caption {
+    background: linear-gradient(to top, crimson, transparent)
+}
+.hexagon:nth-child(2) .caption {
+    background: linear-gradient(to top, dodgerblue, transparent)
+}
+.hexagon:nth-child(3) .caption {
+    background: linear-gradient(to top, yellowgreen, transparent)
+}
+
+.hexagon:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hexagon:hover {
+    transform: translateY(-60px);
+}
+
+.hexagon:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    background: radial-gradient(rgba(0, 0, 0, 0.171), transparent, transparent);
+    bottom: -70px;
+    transition: 0.3s;
+}
+.hexagon:hover:before {
+    opacity: 0.6;
+    transform: scale(0.8);
+    bottom: -130px;
+}
