@@ -1,0 +1,13 @@
+Icons. Easy. Done
+Get vector icons and social logos on youre websidte with Font Awesome, the web's most popular icon set and toolkit.
+
+Download Free
+Checkout Pro
+
+Version5.0.8
+946 Free Icons
+1,535 Pro Icons
+Old 4.7.0 Docs
+================================
+<i class="fa fa-download"></i>
+<i class="fa fa-trophy"></i>
