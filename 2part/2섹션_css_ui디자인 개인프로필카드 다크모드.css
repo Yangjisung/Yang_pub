@@ -12,13 +12,12 @@ body {
     font-size: 15px;
     line-height: 1.6em;
     margin: 0;
-    height: 100vh;
+    height: 100vh; /*frame에 absoulte를 적용시키면서 body의 높이 값이 없어졌음.*/
 }
 a {
     text-decoration: none;
 }
-/* Profie Card Dark Mode */
-
+/* Profile Card Dark Mode */
 .frame {
     position: absolute;
     top: 50%;
@@ -26,6 +25,7 @@ a {
     transform: translate(-50%, -50%);
 }
 .profile {
+    /* border: 1px solid #000; */
     width: 320px;
     padding: 50px 30px;
     box-sizing: border-box;
@@ -33,13 +33,13 @@ a {
     border-radius: 7px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
     text-align: center;
-    position: relative;
-
+    position: relative; /* */
 }
 
 /* Face */
 
 .face {
+    /* border: 1px solid #000; */
     width: 120px;
     height: 120px;
     display: inline-block; /*or margin:auto (중앙배치)*/
@@ -135,7 +135,6 @@ a {
 /* Top Button */
 
 .btn-mode {
-
     width: 20px;
     height: 20px;
     position: absolute;
