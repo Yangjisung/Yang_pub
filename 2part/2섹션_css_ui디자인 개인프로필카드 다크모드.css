@@ -1,0 +1,164 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(/2part/images/svg-background.svg);
+    color:#333;
+    font-size: 15px;
+    line-height: 1.6em;
+    margin: 0;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+/* Profie Card Dark Mode */
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.profile {
+    width: 320px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
+    text-align: center;
+    position: relative;
+
+}
+
+/* Face */
+
+.face {
+    width: 120px;
+    height: 120px;
+    display: inline-block; /*or margin:auto (중앙배치)*/
+    position: relative;
+}
+.face img {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+.face i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    color: #fff;
+}
+.profile h1 {
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 1.2em; /* 또는 span 태그에 margin-top: 10px*/
+    margin-bottom: 0;
+}
+.profile h1 span {
+    display: block;
+    font-size: 13px;
+    color: #bbb;
+    text-transform: uppercase;
+    /* margin-top: 10px; */ /* 또는 h1 태그에 line-height: 1.2em*/
+}
+.profile p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile p span {
+    display: block;
+    color: royalblue;
+}
+.view-porfolio {
+    background-color:#00cec9;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    display: inline-block; /* a태그는 인라인요소: 크기값과 margin 상하 값을 가질 수 없음.*/
+    width: 180px;
+    margin-bottom: 5px; 
+}
+ /* SNS */
+.sns {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.sns div {
+    display: inline-block;
+    width: 30%;
+
+}
+.sns div i {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    font-size: 2.5em;
+    line-height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.sns div:nth-child(1) i {
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+.sns div:nth-child(2) i {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.sns div:nth-child(3) i {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.sns div span {
+    font-size: 13px;
+    color: #bbb;
+}
+.sns div span big {
+    display: block;
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Top Button */
+
+.btn-mode {
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+.btn-mode:before {
+    content: '\eb0f';
+    font-family: xeicon;
+}
+.like-more {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btn-like {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.btn-like:before {
+    content: '\ea11';
+    font-family: xeicon;
+}
+.btn-more {}

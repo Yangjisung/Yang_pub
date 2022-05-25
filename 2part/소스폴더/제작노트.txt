@@ -1,0 +1,26 @@
+■ 제작노트(HTML+CSS+JS 실전 퍼블리싱 예제)
+
+1) HTML 구조만들기
+-
+2) HTML 내용 입력
+-
+3) CSS 배치 크기
+-
+4) CSS 상세 디자인
+-
+.frame 에 position:abosolute 를 입력함으로써
+body의 높이값이 사라짐. 백그라운드의 이미지가 없어졌기 때문에
+h:100vh를 입력해야함. (백그라운드 그라디언트도 동일함.)
+
+5) 다크모드 만들기(HTML, CSS)
+- dark 모드의 html을 제작하여 별도의 다크모드 css 디자인필요
+
+text 컬러 변경
+bcc 컬러 변경
+
+6) 다크모드 라이트모드 전환되는 제이쿼리 만들기(CSS)
+- btn-mode 클릭하여 dark 모드전환
+: profile 에 dark class 추가!
+- btn-mod 클릭하여 아이콘 변화
+: btn-mode 에 .dark.btn-mode class 추가
+====================================================
