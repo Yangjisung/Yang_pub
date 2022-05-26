@@ -1,0 +1,18 @@
+form.login
+	h1
+	span.field
+	input[type=email]
+	span.field
+	input[type=password]
+	.save-info
+		label > input[type=checkbox]
+		a
+	.event-info
+		.custom-checkbox
+			label > input[type=radio] * 2
+	input[type=button]
+	.sns-info
+		.sns
+			(a > i) * 4
+	.signup-info
+		a	
