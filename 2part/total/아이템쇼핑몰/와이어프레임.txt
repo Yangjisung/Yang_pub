@@ -1,0 +1,17 @@
+section
+  h1.heading
+  .items-inner
+    h2
+    .items
+      .item
+        .photo
+          a > (img*2)
+        .detail
+          span.price > b
+          span.name
+          span.count
+          span.like
+      .item    
+      .item    
+      .item    
+      .item    
