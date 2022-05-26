@@ -1,0 +1,7 @@
+No.	Full name	Age	Job title	Location
+6	Vincent Willamson	31	iOS Developer	Washington
+5	Tyler Reyes	22	UI/UX Designer	New York
+4	Keith Carter	20	Graphic Designer	San Fransisco
+3	James Kim	33	iOS Developer	Washington
+2	Cindy Lee	25	UI/UX Designer	New York
+1	Sally Jung	27	Web Publisher	Miami
