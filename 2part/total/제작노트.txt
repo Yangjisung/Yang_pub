@@ -1,0 +1,9 @@
+■ 제작노트(HTML+CSS+JS 실전 퍼블리싱 예제)
+
+1) HTML 구조만들기(Welcome Section, Toggle Trigger)
+2) CSS 크기조정,배치하기,상세 디자인
+3) HTML 구조만들기(All Section & Section Content)
+4) CSS 크기조정,배치하기,상세 디자인
+5) 앵커(Anchor) 만들기
+6) 네비게이션 클릭 후 슬라이딩 되면서 active 클래스 추가(gnb, toggle, body)
+====================================================

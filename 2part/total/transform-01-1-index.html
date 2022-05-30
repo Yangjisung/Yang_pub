@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀스크린 네비게이션 반응형 포트폴리오 with jQuery</title>
+  <!-- jQuery CDN 3.5.1 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="transform-01-1-style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <div class="toggle">
+    <i class="xi-plus-thin"></i>
+  </div>
+  <div class="overlay"></div>
+
+  <ul class="gnb">
+    <li><a href="#feature1">Home</a></li>
+    <li><a href="#feature2">About</a></li>
+    <li><a href="#feature3">Graphic Portfolio</a></li>
+    <li><a href="#feature4">Web Portfolio</a></li>
+    <li><a href="#feature5">Skills</a></li>
+    <li><a href="#feature6">Epilogue</a></li>
+  </ul>
+
+  <div class="container">
+    <section class="welcome" id="feature1">
+      <img src="images/bg-welcome.jpg">
+    </section>
+    <section id="feature2">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : About</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore omnis, sit ratione qui amet harum adipisci fugit tempore excepturi ex odit iusto doloribus error, provident in. Repellat, eum. Omnis tempore aliquid, ipsum pariatur vel voluptatem. Repellat culpa corrupti labore eveniet minus, sint facere voluptates rem, consequuntur, cupiditate excepturi tempora. Magnam ratione odit aperiam, ullam accusantium cumque! Laborum nihil odio reprehenderit qui veniam ad in id incidunt sapiente fugiat dicta explicabo vero officia rem impedit quasi voluptates perspiciatis assumenda, unde perferendis sit enim! Hic beatae quae aliquid blanditiis? Veniam mollitia eos rerum impedit aut maiores harum itaque adipisci laudantium est?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature3">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : Graphic Portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore omnis, sit ratione qui amet harum adipisci fugit tempore excepturi ex odit iusto doloribus error, provident in. Repellat, eum. Omnis tempore aliquid, ipsum pariatur vel voluptatem. Repellat culpa corrupti labore eveniet minus, sint facere voluptates rem, consequuntur, cupiditate excepturi tempora. Magnam ratione odit aperiam, ullam accusantium cumque! Laborum nihil odio reprehenderit qui veniam ad in id incidunt sapiente fugiat dicta explicabo vero officia rem impedit quasi voluptates perspiciatis assumenda, unde perferendis sit enim! Hic beatae quae aliquid blanditiis? Veniam mollitia eos rerum impedit aut maiores harum itaque adipisci laudantium est?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature4">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : Web Portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore omnis, sit ratione qui amet harum adipisci fugit tempore excepturi ex odit iusto doloribus error, provident in. Repellat, eum. Omnis tempore aliquid, ipsum pariatur vel voluptatem. Repellat culpa corrupti labore eveniet minus, sint facere voluptates rem, consequuntur, cupiditate excepturi tempora. Magnam ratione odit aperiam, ullam accusantium cumque! Laborum nihil odio reprehenderit qui veniam ad in id incidunt sapiente fugiat dicta explicabo vero officia rem impedit quasi voluptates perspiciatis assumenda, unde perferendis sit enim! Hic beatae quae aliquid blanditiis? Veniam mollitia eos rerum impedit aut maiores harum itaque adipisci laudantium est?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature5">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : Skills</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore omnis, sit ratione qui amet harum adipisci fugit tempore excepturi ex odit iusto doloribus error, provident in. Repellat, eum. Omnis tempore aliquid, ipsum pariatur vel voluptatem. Repellat culpa corrupti labore eveniet minus, sint facere voluptates rem, consequuntur, cupiditate excepturi tempora. Magnam ratione odit aperiam, ullam accusantium cumque! Laborum nihil odio reprehenderit qui veniam ad in id incidunt sapiente fugiat dicta explicabo vero officia rem impedit quasi voluptates perspiciatis assumenda, unde perferendis sit enim! Hic beatae quae aliquid blanditiis? Veniam mollitia eos rerum impedit aut maiores harum itaque adipisci laudantium est?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature6">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : Epilogue</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore omnis, sit ratione qui amet harum adipisci fugit tempore excepturi ex odit iusto doloribus error, provident in. Repellat, eum. Omnis tempore aliquid, ipsum pariatur vel voluptatem. Repellat culpa corrupti labore eveniet minus, sint facere voluptates rem, consequuntur, cupiditate excepturi tempora. Magnam ratione odit aperiam, ullam accusantium cumque! Laborum nihil odio reprehenderit qui veniam ad in id incidunt sapiente fugiat dicta explicabo vero officia rem impedit quasi voluptates perspiciatis assumenda, unde perferendis sit enim! Hic beatae quae aliquid blanditiis? Veniam mollitia eos rerum impedit aut maiores harum itaque adipisci laudantium est?
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    $('.toggle').click(function(){
+      $('.toggle, .overlay, .gnb').toggleClass('active')
+    })
+    $('.gnb a').click(function(){
+      $('.toggle, .overlay, .gnb').removeClass('active')
+    })
+  </script>
+  
+</body>
+</html>
+
+
+
+
