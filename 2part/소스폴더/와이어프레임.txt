@@ -1,0 +1,21 @@
+.container
+
+  header
+    .banner-outer
+      .banner
+        span > i
+        img
+    .lnb-outer
+      .lnb
+        .logo > a > img
+        .lnb-navi > a * 5
+    .gnb-outer
+      nav
+        ul.gnb
+          li
+            a
+            .dropdown
+              a * 3~7
+
+  section
+    img or background image
