@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="/반응형 애니메이션 모달만들기(JQ).css">
 </head>
 <body>
+    <button class="btn-open">뉴스레터 구독하기</button>
+
     <div class="modal">
         <div class="modal-content">
             <div class="photo"></div>
             <div class="desc">
                 <div class="desc-header">
                     <h2>지금다양한 혜택을 받아보세요.</h2>
-                    <button class="btn-class">&times;</button>
+                    <button class="btn-close">&times;</button>
                 </div>
                 <div class="desc-content">
                     <input type="email" placeholder="이메일 주소를 입력하세요">
@@ -30,5 +32,14 @@
         </div>
     </div>
     <div class="overlay"></div>
+
+    <script>
+        $('.btn-open').click(function(){
+            $('.modal, .overlay').addClass('active')
+        })
+        $('.btn-close,.overlay').click(function(){
+            $('.modal,.overlay').removeClass('active')
+        })
+    </script>
 </body>
 </html>
