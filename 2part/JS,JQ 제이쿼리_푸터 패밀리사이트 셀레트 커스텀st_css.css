@@ -1,0 +1,89 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6em;
+    background-color: #fff;
+    color:#222
+}
+
+a {
+    text-decoration: none;
+    color:#222;
+}
+
+header {
+    height: 100px;
+    background-color: skyblue;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    line-height: 100px;
+}
+section {
+    height: 500px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 500px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ddd;
+}
+
+/* Footer */
+
+footer {
+    background-color: #37393d;
+    color: #999;
+    padding: 30px 0;
+}
+footer em {
+    color: #555;
+    font-style: normal;
+    margin: 7px;
+    display: inline-block;
+    font-size: 12px;
+    /* vertical-align: middle; inline-block 요소에서만 적용가능 */
+    transform: translateY(-3px);
+}
+.footer-inner {
+    border: 1px solid red;
+    width: 1280px;
+    margin: auto;
+    overflow: hidden;
+}
+.copylight {
+    float: left;
+}
+.family {
+    float: right;
+}
+
+.policy {}
+.policy a {
+    color: #fff;
+}
+.policy a:first-child {
+    color: yellowgreen;
+    font-weight: 500;
+}
+.policy a:hover {
+    text-decoration: underline;
+}
+.info p {
+    margin: 5px 0;
+    background-color: red;
+}
