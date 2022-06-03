@@ -63,12 +63,12 @@ footer em {
     /* border: 1px solid red; */
     width: 1280px;
     margin: auto;
-    /* overflow: hidden; */
+    /* overflow: hidden; 자식요소의 float으로 인해 사라지 높이값 & FAMLIY */
 }
 .footer-inner:after {
     content:'';
     display: block;
-    clear: both;
+    clear: both; /* 자식요소의 float으로 인해 사라지 높이값 */
 }
 .copylight {
     float: left;
@@ -97,7 +97,6 @@ footer em {
 /* Family Site */
 
 .dropdown {
-    border: 1px solid #000;
     width: 200px;
     border: 1px solid #555;
     cursor: pointer;
