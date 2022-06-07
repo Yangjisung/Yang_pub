@@ -2,7 +2,7 @@ section.faq
 	.innner
 		h1
 			article.accordion
-				.faq-title > i
+				.faq-title > imo
 				.faq-content
 				.faq-title > i
 				.faq-content

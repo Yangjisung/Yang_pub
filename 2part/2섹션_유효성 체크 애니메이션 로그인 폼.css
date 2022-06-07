@@ -1,0 +1,92 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background-color: #222;
+    color: gainsboro;
+    left: 1.6em;
+}
+
+a {
+    text-decoration:none;
+    color: gainsboro;
+}
+/* NetFlix Accordian */
+
+.faq .inner {
+    width: 700px;
+    margin: auto;
+}
+.faq .inner h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.faq-title {
+    background-color: #303030;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    position: relative;
+}
+.faq-title:hover,
+.faq-title.active {
+    background-color: #34495e;
+}
+.faq-title::after {
+    content: '\e9c5';
+    font-family: xeicon;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 11px;
+    transition: 0.35s;
+}
+.faq-title.active::after {
+    transform: rotate(45deg);
+}
+
+/* xeicon 활용법#1 - i태그 */
+/* .faq-title i {
+    font-size: 15px;
+    float: right;
+    transition: 0.35s;
+} */
+/* .faq-title.active i {
+    transform: rotate(45deg);
+} */
+
+/* xeicon 활용법#2 - 유니코드 */
+/* .faq-title em {
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    float: right;
+    font-style: normal;
+    transition: 0.35s;
+} */
+/* .faq-title em:before {
+    content: '\e9c5';
+    font-family: xeicon;
+}
+.faq-title.active em {
+    transform: rotate(45deg);
+} */
+
+.faq-content {
+    background-color: #303030;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: none;
+}
