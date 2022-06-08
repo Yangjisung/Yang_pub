@@ -1,0 +1,167 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6em;
+    color: #fff;
+    background-color: #000;
+    font-size: 26px;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Header */
+header {
+    overflow: hidden;
+    padding: 35px 55px;
+    position: absolute;
+    width: 90%;
+    z-index: 10;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 170px;
+}
+.signin {
+    float: right;
+}
+.signin button {
+    background-color: crimson;
+    border: none;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* common CSS */
+section {
+    border-bottom: 10px solid #333;
+    position: relative;
+}
+/* section welcome */
+.welcome {
+    height: 80vh;
+    background: url(/images/background.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Heading */
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 800px;
+}
+.heading h1 {
+    font-size: 64px;
+    line-height: 1.2em;
+    margin: 0;
+}
+.heading h5 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 20px;
+}
+.heading p {
+    font-size: 20px;
+}
+.getstarted {
+    /* border: 5px solid blue; */
+    position: relative;
+    display: inline-block;
+}
+.getstarted input[type=email],
+.getstarted button {
+    height: 60px;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+}
+
+.getstarted input[type=email] {
+    width: 450px;
+    height: 57px;
+    margin-top: -2px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.getstarted input[type=email] + span {
+    color: #999;
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.35s;
+    pointer-events: none;
+}
+.getstarted input[type=email]:focus + span {
+    font-weight: bold;
+    transform: translatey(-18px);
+}
+
+.getstarted button {
+    width: 220px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* section: enjoy, Dowload, Watch, Create */
+.enjoy, .download, .watch, .create {
+    height: 500px;
+}
+.inner {
+    width: 1150px;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.desc, .preview {
+    float:left;
+    width: 50%;
+}
+.desc {
+    padding-top: 40px;
+}
+.desc h2 {
+    font-size: 50px;
+    line-height: 1.2em;
+}
+.desc p {}
+.preview {
+    text-align: center;
+}
+.preview img {
+    height: 350px;
+}
