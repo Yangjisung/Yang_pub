@@ -16,7 +16,7 @@
 				p
 					label > input[type=checkbox], a
 				p > a*2
-			.next-section
+	    .next-section
 			  a > i
 	
 	section.feature.solution
